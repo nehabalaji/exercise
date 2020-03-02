@@ -30,6 +30,8 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     private EditText mSearchBoxEditText;
 
     private TextView mUrlDisplayTextView;
