@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     private void logAndAppend(String lifecycleEvent) {
         Log.d(TAG, "Lifecycle Event: " + lifecycleEvent);
 
-        mLifecycleDisplay.append(lifecycleEvent + "\n");
+        mLifecycleDisplay.append(lifecycleEvent + " \n");
     }
 
     /**
