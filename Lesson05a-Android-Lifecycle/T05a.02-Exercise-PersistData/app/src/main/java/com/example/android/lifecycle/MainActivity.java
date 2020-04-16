@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
      * Activity. This TextView can be reset to its default state by clicking the Button labeled
      * "Reset Log"
      */
-    private TextView mLifecycleDisplay;
+    private TextView mLifecycleDisplay = findViewById(R.id.tv_lifecycle_events_display);
 
     /**
      * Called when the activity is first created. This is where you should do all of your normal
@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLifecycleDisplay = (TextView) findViewById(R.id.tv_lifecycle_events_display);
 
         // TODO (6) If savedInstanceState is not null and contains LIFECYCLE_CALLBACKS_TEXT_KEY, set that text on our TextView
         if (savedInstanceState!=null){
