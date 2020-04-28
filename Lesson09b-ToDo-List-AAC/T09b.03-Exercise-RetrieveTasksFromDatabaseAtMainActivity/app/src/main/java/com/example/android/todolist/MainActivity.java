@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
         });
 
         // TODO (2) Initialize member variable for the data base
-        mDb = AppDatabase.getInstance(getApplicationContext());
+        mDb=AppDatabase.getInstance(getApplicationContext());
     }
 
     /**
