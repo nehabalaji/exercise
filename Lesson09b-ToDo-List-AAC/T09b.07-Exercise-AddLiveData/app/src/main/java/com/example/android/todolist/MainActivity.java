@@ -26,10 +26,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.View;
-
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.Observer;
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.Observer;
 
 import com.example.android.todolist.database.AppDatabase;
 import com.example.android.todolist.database.TaskEntry;
@@ -121,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.ItemC
         // TODO (3) Fix compile issue by wrapping the return type with LiveData
         final LiveData<List<TaskEntry>> tasks = mDb.taskDao().loadAllTasks();
         // TODO (5) Observe tasks and move the logic from runOnUiThread to onChanged
-        tasks.observe((LifecycleOwner) this, new Observer<List<TaskEntry>>() {
+        tasks.observe( this, new Observer<List<TaskEntry>>() {
             @Override
             public void onChanged(List<TaskEntry> taskEntries) {
                 mAdapter.setTasks(taskEntries);
