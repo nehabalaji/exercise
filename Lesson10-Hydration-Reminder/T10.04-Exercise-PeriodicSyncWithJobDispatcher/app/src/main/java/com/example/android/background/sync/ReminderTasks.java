@@ -43,5 +43,9 @@ public class ReminderTasks {
     // and dismissing notifications. This task should both create a notification AND
     // increment the charging reminder count (hint: there is a method for this in PreferenceUtilities)
     // When finished, you should be able to call executeTask with the correct parameters to execute
-    // this task. Don't forget to add the code to executeTask which actually calls your new task!
+    // this task. Don't forget to add the code to executeTask which actually calls your new task!\
+
+    public void chargingReminderNotification(Context context){
+
+    }
 }
